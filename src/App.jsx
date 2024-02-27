@@ -4,9 +4,15 @@ const Hello = (props) => {
   return (
     <div>
       <p>
-
-        Hello {props.name}, you are {props.age} years old
+      Hello {props.name}, you are {props.age} years old
       </p>
+    </div>
+  )
+}
+const Footer =() =>{
+  return (
+    <div>
+      <p>greeting app created by Madhu</p>
     </div>
   )
 }
@@ -22,6 +28,7 @@ const App = () => {
 
       <Hello name='Maya' age={26 + 10} />
       <Hello name={name} age={age} />
+      <Footer/>
     </div>
   )
 }
