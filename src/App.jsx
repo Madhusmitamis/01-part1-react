@@ -21,6 +21,11 @@ const App = () => {
 
   const name = 'Peter'
   const age = 10
+  const friends = [
+    { name: 'Peter', age: 4 },
+    { name: 'Maya', age: 10 },
+  ]
+  const friend = [ 'Peter', ' Maya']
 
   return (
     <div>
@@ -28,6 +33,9 @@ const App = () => {
 
       <Hello name='Maya' age={26 + 10} />
       <Hello name={name} age={age} />
+      <p>{friends[0].name} {friends[0].age}</p>
+      <p>{friends[1].name} {friends[1].age}</p>
+      <p>{friend}</p>
       <Footer/>
     </div>
   )
